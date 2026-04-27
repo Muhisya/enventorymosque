@@ -1,13 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const inventorySlice = createSlice({
-  name: "inventory",
-  initialState: {
-    items: [],
-  },
+  name: 'inventory',
+  initialState: [],
   reducers: {
     addItem: (state, action) => {
-      state.items.push(action.payload);
+      state.push(action.payload);
     },
   },
 });
